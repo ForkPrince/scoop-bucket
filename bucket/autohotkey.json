@@ -1,0 +1,39 @@
+{
+    "version": "2.0.29",
+    "description": "AutoHotkey - macro-creation and automation-oriented scripting utility for Windows",
+    "homepage": "https://autohotkey.com/",
+    "license": "GPL-2.0-only",
+    "notes": [
+        "On arm64 the binary is an experimental community build from https://github.com/ForkPrince/AutoHotkey/releases, based on the upstream PR linked there.",
+        "Run scripts with the interpreter shim, e.g. 'AutoHotkeyARM64.exe script.ahk' on arm64 or 'AutoHotkey64.exe script.ahk' on 64bit."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.29/AutoHotkey_2.0.29.zip",
+            "hash": "b2d0200724a6b6ad22c965c939c5e5a2c64a35d1ccb455a3ca3f8ce415c5a296",
+            "bin": "AutoHotkey64.exe"
+        },
+        "arm64": {
+            "url": "https://github.com/ForkPrince/AutoHotkey/releases/download/v2.0.29/AutoHotkey_2.0.29_arm64.zip",
+            "hash": "c27c59a1a1227887a61413876310c8e4d22a139523100e7b1ad0b41795bbde45",
+            "bin": "AutoHotkeyARM64.exe"
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/AutoHotkey/AutoHotkey"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v$version/AutoHotkey_$version.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/ForkPrince/AutoHotkey/releases/download/v$version/AutoHotkey_$version_arm64.zip",
+                "hash": {
+                    "url": "https://github.com/ForkPrince/AutoHotkey/releases/download/v$version/SHA256SUMS",
+                    "regex": "(?m)^([a-fA-F0-9]{64})[\\x20]+[*]?AutoHotkey_[\\d.]+_arm64\\.zip"
+                }
+            }
+        }
+    }
+}
