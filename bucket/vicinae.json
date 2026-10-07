@@ -1,0 +1,47 @@
+{
+    "version": "0.29.1",
+    "description": "A focused launcher for your desktop - native, fast, extensible",
+    "homepage": "https://vicinae.com",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "On arm64 the binaries are a community build from https://github.com/ForkPrince/vicinae/releases. They are unsigned, which disables Vicinae's built-in updater on that architecture, so use 'scoop update vicinae' instead.",
+        "Extensions need a Node.js runtime, which Vicinae downloads from nodejs.org on first use into %LOCALAPPDATA%\\vicinae\\data\\node."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vicinaehq/vicinae/releases/download/v0.29.1/vicinae-x64-portable.zip",
+            "hash": "57baadb16664f84f8d184ad112699b95f4a2276e0d04e71efcec50472b961ec7"
+        },
+        "arm64": {
+            "url": "https://github.com/ForkPrince/vicinae/releases/download/v0.29.1/vicinae-arm64-portable.zip",
+            "hash": "a71eb6eacc762b7d0f3c02fe1edf695736d252ac0ad5bd4e088ac059aac35af2"
+        }
+    },
+    "bin": [
+        "bin\\vicinae.exe",
+        "bin\\vicinae-server.exe"
+    ],
+    "shortcuts": [
+        [
+            "bin\\vicinae-server.exe",
+            "Vicinae"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/vicinaehq/vicinae"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vicinaehq/vicinae/releases/download/v$version/vicinae-x64-portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/ForkPrince/vicinae/releases/download/v$version/vicinae-arm64-portable.zip",
+                "hash": {
+                    "url": "https://github.com/ForkPrince/vicinae/releases/download/v$version/SHA256SUMS",
+                    "regex": "(?m)^([a-fA-F0-9]{64})[\\x20]+[*]?vicinae-arm64-portable\\.zip"
+                }
+            }
+        }
+    }
+}
