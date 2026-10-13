@@ -1,0 +1,31 @@
+{
+    "version": "3.9.2",
+    "description": "A desktop companion that reimagines how you interact with Windows",
+    "homepage": "https://github.com/SehajveerSingh2005/bloom",
+    "license": "GPL-3.0-only",
+    "notes": "Bloom replaces the Windows taskbar and adds an adaptive top-notch. It requires Windows 10 or later.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SehajveerSingh2005/bloom/releases/download/v3.9.2/bloom_3.9.2_x64-setup.exe#/dl.7z",
+            "hash": "7a92ec69a4632412a4ddfc3f5616ec588e95087aa58c831c580e25a6ad81c976",
+            "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue"
+        }
+    },
+    "bin": "bloom.exe",
+    "shortcuts": [
+        [
+            "bloom.exe",
+            "Bloom"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/SehajveerSingh2005/bloom"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SehajveerSingh2005/bloom/releases/download/v$version/bloom_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
