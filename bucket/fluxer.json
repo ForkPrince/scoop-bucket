@@ -6,9 +6,6 @@
     "url": "https://pkgs.fluxer.com/desktop/stable/win32/x64/2026.1014.180559/portable#/Fluxer-2026.1014.180559-portable-win-x64.zip",
     "hash": "7455211286ff43432e832482ebd0832acefba93b030e29e44319b2f4ac771f26",
     "bin": "Fluxer.exe",
-    "shortcuts": [
-        ["Fluxer.exe", "Fluxer"]
-    ],
     "checkver": {
         "script": [
             "$src = 'https://pkgs.fluxer.com/desktop/stable/win32/x64/latest'",
