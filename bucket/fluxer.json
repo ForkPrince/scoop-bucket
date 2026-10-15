@@ -1,13 +1,16 @@
 {
-    "version": "2026.1014.180559",
+    "version": "2026.1015.24528",
     "description": "Fluxer",
     "homepage": "https://fluxer.app",
     "license": "AGPLv3",
-    "url": "https://pkgs.fluxer.com/desktop/stable/win32/x64/2026.1014.180559/portable#/Fluxer-2026.1014.180559-portable-win-x64.zip",
-    "hash": "7455211286ff43432e832482ebd0832acefba93b030e29e44319b2f4ac771f26",
+    "url": "https://pkgs.fluxer.com/desktop/stable/win32/x64/2026.1015.24528/portable#/Fluxer-2026.1015.24528-portable-win-x64.zip",
+    "hash": "733c285d27b4eff1899cbe22bcaaf1b13d916d962335e859326ddbdeaeb6e1d8",
     "bin": "Fluxer.exe",
     "shortcuts": [
-        ["Fluxer.exe", "Fluxer"]
+        [
+            "Fluxer.exe",
+            "Fluxer"
+        ]
     ],
     "checkver": {
         "script": [
