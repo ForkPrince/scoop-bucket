@@ -9,9 +9,7 @@
             "hash": "ab5e7bbfa50872225f24856697ef7341a58e51a5e521435ba0dfeeb8ab3b2676"
         }
     },
-    "bin": [
-        "FPilot.exe"
-    ],
+    "bin": "FPilot.exe",
     "shortcuts": [
         [
             "FPilot.exe",
