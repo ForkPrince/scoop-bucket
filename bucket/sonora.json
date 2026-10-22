@@ -1,16 +1,16 @@
 {
-    "version": "0.43.0",
+    "version": "0.44.0",
     "description": "A native music streaming client, built with Rust and GPUI",
     "homepage": "https://sonorahq.org/",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sonorahq/sonora/releases/download/v0.43.0/sonora-v0.43.0-x86_64-pc-windows-msvc.exe#/Sonora.exe",
-            "hash": "8c94bb2c035834daf03a88beb2ac1560fedebd70827950d3eb3a48ca57fd3da4"
+            "url": "https://github.com/sonorahq/sonora/releases/download/v0.44.0/sonora-v0.44.0-x86_64-pc-windows-msvc.exe#/Sonora.exe",
+            "hash": "459f507018a4d4ab81a93778997ec938ae42f29ea543485d00d1b4e921bff1c1"
         },
         "arm64": {
-            "url": "https://github.com/sonorahq/sonora/releases/download/v0.43.0/sonora-v0.43.0-aarch64-pc-windows-msvc.exe#/Sonora.exe",
-            "hash": "c7673268958881f27cddfb08352fc38bebcb0bdb8c83f197cdf729092d7c39ef"
+            "url": "https://github.com/sonorahq/sonora/releases/download/v0.44.0/sonora-v0.44.0-aarch64-pc-windows-msvc.exe#/Sonora.exe",
+            "hash": "1d11143e6604229b55edc1c3a74080c35641f53bfb7919320bd93a8923d6f779"
         }
     },
     "bin": "Sonora.exe",
