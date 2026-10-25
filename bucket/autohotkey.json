@@ -1,5 +1,5 @@
 {
-    "version": "2.0.30",
+    "version": "2.0.31",
     "description": "AutoHotkey - macro-creation and automation-oriented scripting utility for Windows",
     "homepage": "https://autohotkey.com/",
     "license": "GPL-2.0-only",
@@ -9,13 +9,13 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.30/AutoHotkey_2.0.30.zip",
-            "hash": "1e0ece7ecb2d5646e55758150472677996a57f9db5c83d2996d8b47b9e2f31a4",
+            "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.31/AutoHotkey_2.0.31.zip",
+            "hash": "ca1a595aca4528755d8d4cd7fed23d497a37bd9a0b6892072612d68dee1bd00a",
             "bin": "AutoHotkey64.exe"
         },
         "arm64": {
-            "url": "https://github.com/ForkPrince/AutoHotkey/releases/download/v2.0.30/AutoHotkey_2.0.30_arm64.zip",
-            "hash": "cd5495029434ae841425877f6205885f77e1b8c6f81f449602ad7cfe5fb928ff",
+            "url": "https://github.com/ForkPrince/AutoHotkey/releases/download/v2.0.31/AutoHotkey_2.0.31_arm64.zip",
+            "hash": "36f7e24009309207a2b13f8f6fc42de31ed1a3c57d86869d7986078ae6f8c7bb",
             "bin": "AutoHotkeyARM64.exe"
         }
     },
