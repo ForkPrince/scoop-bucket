@@ -1,0 +1,43 @@
+{
+    "version": "0.2.75",
+    "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust.",
+    "homepage": "https://playhorizon.dev",
+    "license": "MIT",
+    "notes": [
+        "Horizon contains no Minecraft code, assets or data: you need your own legally obtained copy of Minecraft: Java Edition 26.3, played once.",
+        "A Java 25 runtime is required for the one-time resource preparation (horizon-prepare)."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ludovic111/horizon/releases/download/v0.2.75/horizon-windows-x64.zip",
+            "hash": "aa7cb138a34471072433a422261ac2bf5bcf7e34834b004b0e15cfd51c8cb211"
+        }
+    },
+    "extract_dir": "horizon-windows-x64",
+    "bin": [
+        "horizon-client.exe",
+        "horizon-ctl.exe",
+        "horizon-prepare.exe",
+        "horizon-server.exe"
+    ],
+    "shortcuts": [
+        [
+            "horizon-client.exe",
+            "Horizon"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ludovic111/horizon"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ludovic111/horizon/releases/download/v$version/horizon-windows-x64.zip",
+                "hash": {
+                    "url": "https://github.com/ludovic111/horizon/releases/download/v$version/SHA256SUMS",
+                    "regex": "([a-fA-F0-9]{64})\\s+horizon-windows-x64\\.zip"
+                }
+            }
+        }
+    }
+}
