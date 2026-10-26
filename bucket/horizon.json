@@ -5,7 +5,7 @@
     "license": "MIT",
     "notes": [
         "Horizon contains no Minecraft code, assets or data: you need your own legally obtained copy of Minecraft: Java Edition 26.3, played once.",
-        "A Java 25 runtime is required for the one-time resource preparation (horizon-prepare)."
+        "A Java 25 runtime is required for the one-time resource preparation (horizon-prepare). Run horizon-prepare.exe --prepare --server-jar <path> before first launch."
     ],
     "architecture": {
         "64bit": {
