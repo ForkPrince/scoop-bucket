@@ -1,5 +1,5 @@
 {
-    "version": "0.2.92",
+    "version": "0.2.93",
     "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust.",
     "homepage": "https://playhorizon.dev",
     "license": "MIT",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ludovic111/horizon/releases/download/v0.2.92/horizon-windows-x64.zip",
-            "hash": "d30c76c5d7de20f36289de7309340bb19c964e66c79888ca5192c86e1165104e"
+            "url": "https://github.com/ludovic111/horizon/releases/download/v0.2.93/horizon-windows-x64.zip",
+            "hash": "5a51908167d7d51599157eb667a6b021de6a46a9601590c2d1293c77d3dca4a4"
         }
     },
     "extract_dir": "horizon-windows-x64",
