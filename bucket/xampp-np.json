@@ -20,7 +20,7 @@
             "    exit 1",
             "}",
             "",
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('--mode', 'unattended', '--launchapps', '0') | Out-Null",
+            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('--mode', 'unattended') | Out-Null",
             "Remove-Item \"$dir\\setup.exe\"",
             "if (Test-Path $persist_dir) { Copy-Item -Path \"$persist_dir\\*\" -Destination \"$env:HOMEDRIVE\\xampp\" -Force -Recurse }"
         ]
